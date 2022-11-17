@@ -1,3 +1,5 @@
+// Konvention: Klassen beginnen mit einem Großbuchstaben, Objekte (Instanzen) mit einem Kleinbuchstaben
+
 class Base {
   a = ''; // public
   #b = 'B'; // private
