@@ -19,6 +19,7 @@
 - https://bun.sh/
 - https://www.ecma-international.org/wp-content/uploads/ECMA-262_13th_edition_june_2022.pdf
 - https://developer.mozilla.org/en-US/
+- https://eslint.org/
 
 # Debugging im Browser
 
