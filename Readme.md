@@ -24,6 +24,8 @@
 - Semantic Versioning: https://semver.org/lang/de/
 - Lizenzen: https://choosealicense.com/
 - Übersicht über Paketdownloadzahlen: https://npmtrends.com/
+- https://prettier.io/
+- Fake Daten Generator: https://fakerjs.dev/
 
 # Debugging im Browser
 
