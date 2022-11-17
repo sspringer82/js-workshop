@@ -12,10 +12,12 @@ class Base {
     return this.a;
   }
 
+  // instance.getB();
   getB() {
     return this.#b;
   }
 
+  // instance.b
   get b() {
     console.log('get B');
     return this.#b;
