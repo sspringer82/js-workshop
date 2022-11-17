@@ -1,4 +1,7 @@
 - eslint
 - Bundler
-- terser
+  - terser
 - Testframeworks
+- Frontend
+- Async
+- TypeScript

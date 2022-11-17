@@ -1,8 +1,8 @@
 import express from 'express';
-import { getAllAccounts } from './controller.js';
+import accountRouter from './accounts/index.js';
 
 const app = express();
 
-app.get('/accounts', getAllAccounts);
+app.use('/accounts', accountRouter);
 
 app.listen(8080, () => console.log('listening'));
