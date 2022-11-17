@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "- readme.md => Dokumentation für die Applikation   - wie setze ich meine Applikation auf (development)   - was gibt es zu beachten   - Konventionen - .gitignore => was nicht ins repo soll/muss z.B. node_modules",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}

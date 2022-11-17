@@ -44,9 +44,26 @@ console.log(instance.getB()); // B
 console.log(instance.a); // kein Zugriff auf #b
 
 class Child extends Base {
+  static myValue = 'my value';
+
+  static {
+    Child.myValue = 1 + 2 + 3;
+  }
+
   constructor(value1, value2) {
     super(value1);
+
+    console.log(Child.myValue);
+  }
+
+  static createChild(v1, v2) {
+    return new Child(v1, v2);
+    // return new this(v1, v2); // this === Child
   }
 }
 
 const child = new Child();
+
+const child2 = Child.createChild('v1', 'v2');
+
+console.log(Child.myValue);

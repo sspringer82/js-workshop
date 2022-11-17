@@ -21,6 +21,9 @@
 - https://developer.mozilla.org/en-US/
 - https://eslint.org/
 - https://github.com/airbnb/javascript
+- Semantic Versioning: https://semver.org/lang/de/
+- Lizenzen: https://choosealicense.com/
+- Übersicht über Paketdownloadzahlen: https://npmtrends.com/
 
 # Debugging im Browser
 
@@ -36,3 +39,15 @@
 - Browser öffnen (Chrome oder Edge): chrome://inspect
 - Node-Prozess auswählen
 - debuggen
+
+# Modulsysteme
+
+- ECMAScript-Modulsystem: import + export => DAS Modulsystem!
+- CommonJS: require + module.exports => veraltet, nicht mehr nutzen (alter Node.js Standard)
+- AMD: require + define => altes Modulsystem aus der dojo foundation
+
+# NPM Scripts
+
+- Standard Scripts (start, stop, reload...) => npm start
+- NichtStandard Scripts (develop, etc) => npm run develop
+- 3 Phasen: prephase, phase, postphase => prestart, start, poststart
