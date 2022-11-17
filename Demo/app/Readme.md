@@ -10,6 +10,8 @@
 
 ## Setup
 
+- .gitignore erzeugen
+- readme.md erzeugen
 - npm init -y => erzeugt package.json
 - npm install express => installiert express
 
