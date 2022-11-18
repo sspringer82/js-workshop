@@ -18,7 +18,6 @@ describe('Model', () => {
   });
 
   it('should add a new account to an existing array', () => {
-    debugger;
     const model = new Model();
     model.fillAccounts(); // + 100 Accounts
 
@@ -33,5 +32,24 @@ describe('Model', () => {
       age: 42,
       userName: 'kMüller',
     });
+  });
+
+  it('should remove an account', () => {
+    const model = new Model();
+    model.fillAccounts();
+
+    const allAccounts = model.getAccounts();
+    const originalLength = allAccounts.length;
+    const accountIdToBeDeleted = allAccounts[27].id;
+
+    model.removeAccount(accountIdToBeDeleted);
+
+    const modifiedAccounts = model.getAccounts();
+    const doesTheAccountExist = modifiedAccounts.find(
+      (account) => account.id === accountIdToBeDeleted
+    );
+
+    expect(modifiedAccounts.length).toEqual(originalLength - 1);
+    expect(doesTheAccountExist).toBeUndefined();
   });
 });
