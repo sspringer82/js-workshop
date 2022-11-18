@@ -4,8 +4,8 @@ export default class Account extends Person {
   userName = '';
   #password = '';
 
-  constructor(firstName, lastName, age) {
-    super(firstName, lastName, age);
+  constructor(id, firstName, lastName, age) {
+    super(id, firstName, lastName, age);
     this.userName = this.firstName[0].toLowerCase() + this.lastName;
   }
 

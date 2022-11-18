@@ -1,10 +1,17 @@
 import { Router } from 'express';
-import { getAllAccounts } from './controller.js';
+import {
+  getAllAccounts,
+  createAccount,
+  updateAccount,
+  removeAccount,
+} from './controller.js';
 
 const router = Router();
 
 // GET http://localhost:8080/accounts
 router.get('/', getAllAccounts);
-// router.post('/accounts', createAccount);
+router.post('/', createAccount);
+router.put('/:id', updateAccount);
+router.delete('/:id', removeAccount);
 
 export default router;
