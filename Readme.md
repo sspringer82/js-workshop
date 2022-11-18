@@ -61,3 +61,10 @@
 - Standard Scripts (start, stop, reload...) => npm start
 - NichtStandard Scripts (develop, etc) => npm run develop
 - 3 Phasen: prephase, phase, postphase => prestart, start, poststart
+
+# Aufsetzen
+
+1. Code holen (z.B. Download ZIP oder git clone)
+2. in das Verzeichnis mit der package.json wechseln
+3. `npm install`, um alle Abhängigkeiten zu installieren
+4. `npm start`, zum starten, `npm test`, um die Tests auszuführen
