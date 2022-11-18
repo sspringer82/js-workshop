@@ -82,3 +82,9 @@
 # ESLint
 
 `npm init @eslint/config`
+
+# Typescript
+
+- Neues Projekt beginnen
+- `npm add typescript`
+- `npx tsc --init` => tsconfig.json
