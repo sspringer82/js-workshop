@@ -42,14 +42,22 @@ function createTableBody(table, data) {
     createElement('td', tr, account.age);
     const buttonCell = createElement('td', tr);
     const button = createElement('button', buttonCell, 'löschen');
-    button.addEventListener('click', () => {
-      deleteAccount(account.id);
-    });
+    button.dataset.deleteId = account.id;
+    // button.addEventListener('click', () => {
+    //   deleteAccount(account.id);
+    // });
   }
 }
 
 export default function createTable(target, data) {
-  const table = createElement('table', target);
+  const table = createElement('table');
+  table.addEventListener('click', (event) => {
+    const data = event.target.dataset;
+    if (data.deleteId) {
+      deleteAccount(data.deleteId);
+    }
+  });
   createTableHeader(table);
   createTableBody(table, data);
+  target.appendChild(table); // nicht im sichtbaren Bereich arbeiten! Erst am Schluss einhängen
 }
