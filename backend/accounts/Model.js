@@ -20,9 +20,9 @@ export default class Model {
   }
 
   createAccount(account) {
-    let nextId = Math.max(...this.#accounts.map((account) => account.id)) + 1;
-    if (nextId === null) {
-      nextId = 1;
+    let nextId = 1;
+    if (this.#accounts.length > 0) {
+      nextId = Math.max(...this.#accounts.map((account) => account.id)) + 1;
     }
 
     const newAccount = new Account(
