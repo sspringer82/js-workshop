@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
       theadRow.appendChild(thFirstName);
       const tbody = document.createElement('thead');
       table.appendChild(tbody);
+      const accountList = document.querySelector('#account-list');
+      accountList.appendChild(table);
     });
   console.log('b');
 
   const div = document.createElement('div');
   div.innerText = 'Hallo Welt';
-  const accountList = document.querySelector('#account-list');
   // tag selector: div => <div>
   // class select: .myClass  => <p class="myClass">
   // id selector: #account-list => <h1 id="account-list">
-  accountList.appendChild(table);
 });
