@@ -23,8 +23,7 @@ export function updateAccount(request, response) {
 export function removeAccount(request, response) {
   const id = parseInt(request.params.id, 10);
   myModel.removeAccount(id);
-  response.status(204);
-  response.send();
+  response.status(204).send();
 }
 
 export function fillAccounts(request, response) {

@@ -26,6 +26,14 @@
 - Übersicht über Paketdownloadzahlen: https://npmtrends.com/
 - https://prettier.io/
 - Fake Daten Generator: https://fakerjs.dev/
+- Objekte kopieren bzw. immutability
+  - https://github.com/kolodny/immutability-helper => sehr leichtgewichtig, komische syntax
+  - https://github.com/immerjs/immer => leichtgewichtig (JS Proxy), js syntax
+  - https://immutable-js.com/ => schwergewichtig, neue Datentypen
+- Testframeworks
+  - https://mochajs.org/ => zusätzlich Assertion library wie https://www.chaijs.com/
+  - https://jasmine.github.io/ => Batteries included
+  - https://jestjs.io/
 
 # Debugging im Browser
 
