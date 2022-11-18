@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     .then((data) => {
       console.log(data);
       // hier ist eine gute Stelle, um die Tabelle zu füllen
+      const table = document.createElement('table');
+      const thead = document.createElement('thead');
+      table.appendChild(thead);
+      const theadRow = document.createElement('tr');
+      thead.appendChild(theadRow);
+      const thFirstName = document.createElement('th');
+      thFirstName.innerText = 'Vorname:';
+      theadRow.appendChild(thFirstName);
+      const tbody = document.createElement('thead');
+      table.appendChild(tbody);
     });
   console.log('b');
 
@@ -17,5 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // tag selector: div => <div>
   // class select: .myClass  => <p class="myClass">
   // id selector: #account-list => <h1 id="account-list">
-  accountList.appendChild(div);
+  accountList.appendChild(table);
 });
