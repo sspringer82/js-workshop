@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then((data) => {
       console.log(data);
+      // hier ist eine gute Stelle, um die Tabelle zu füllen
     });
   console.log('b');
 
