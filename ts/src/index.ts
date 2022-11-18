@@ -1,4 +1,5 @@
 import User from './User';
+import './Collection';
 
 const userName = 'Klaus';
 console.log('Hallo ' + userName);
@@ -25,4 +26,4 @@ const sub = (a: number, b: number): number => {
   return a - b;
 };
 
-const klaus = new User();
+const klaus = new User('Lisa', 'Meier');

@@ -44,6 +44,8 @@
   - https://esbuild.github.io/
   - https://vitejs.dev/
 - https://github.com/sindresorhus/eslint-plugin-unicorn
+- https://www.typescriptlang.org/docs/handbook/utility-types.html
+- https://github.com/DefinitelyTyped/DefinitelyTyped
 
 # Debugging im Browser
 

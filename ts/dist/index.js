@@ -23,4 +23,4 @@ const add = function (a, b) {
 const sub = (a, b) => {
     return a - b;
 };
-const klaus = new User_1.default();
+const klaus = new User_1.default('Lisa', 'Meier');
