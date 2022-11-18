@@ -4,6 +4,7 @@ import {
   createAccount,
   updateAccount,
   removeAccount,
+  fillAccounts,
 } from './controller.js';
 
 const router = Router();
@@ -13,5 +14,6 @@ router.get('/', getAllAccounts);
 router.post('/', createAccount);
 router.put('/:id', updateAccount);
 router.delete('/:id', removeAccount);
+router.get('/fill', fillAccounts);
 
 export default router;

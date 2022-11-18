@@ -26,3 +26,8 @@ export function removeAccount(request, response) {
   response.status(204);
   response.send();
 }
+
+export function fillAccounts(request, response) {
+  myModel.fillAccounts();
+  response.send();
+}

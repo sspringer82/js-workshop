@@ -1,15 +1,20 @@
 import Account from './Account.js';
+import { faker } from '@faker-js/faker';
 
 export default class Model {
   #accounts = [];
 
-  constructor() {
-    this.#accounts = [
-      new Account(1, 'Claudia', 'Meier', 24),
-      new Account(2, 'Klaus', 'Müller', 42),
-      new Account(3, 'Lisa', 'Schmitt', 24),
-      new Account(4, 'Rüdiger', 'Müller', 42),
-    ];
+  constructor() {}
+
+  fillAccounts() {
+    this.#accounts = new Array(100).fill('').map((account, index) => {
+      return new Account(
+        index,
+        faker.name.firstName(),
+        faker.name.lastName(),
+        Math.floor(Math.random() * 50) + 10
+      );
+    });
   }
 
   getAccounts() {
