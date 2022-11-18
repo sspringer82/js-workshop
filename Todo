@@ -1,10 +1,6 @@
 - Frontend
-  - Liste der Accounts
   - Löschen eines Accounts
   - Anlegen eines Accounts
-- Async
 - TypeScript
 
 - eslint
-- Bundler
-  - terser

@@ -9,6 +9,25 @@
   </head>
   <body>
     <h1>Accountverwaltung</h1>
+    <button id="myButton">click me</button>
     <div id="account-list"></div>
+
+    <script>
+      document
+        .querySelector('#myButton')
+        .addEventListener('click', async () => {
+          alert('you clicked the button');
+
+          const id = 42;
+          const response = await fetch('http://localhost:8080/accounts/' + id, {
+            method: 'DELETE',
+          });
+          if (response.ok) {
+            console.log('deleted successfully');
+          } else {
+            console.error('failed');
+          }
+        });
+    </script>
   </body>
 </html>
