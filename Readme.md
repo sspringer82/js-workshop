@@ -34,6 +34,15 @@
   - https://mochajs.org/ => zusätzlich Assertion library wie https://www.chaijs.com/
   - https://jasmine.github.io/ => Batteries included
   - https://jestjs.io/
+- https://rxjs.dev/guide/overview
+- Bundler
+  - https://webpack.js.org/
+  - https://rollupjs.org/guide/en/
+  - https://parceljs.org/
+  - https://vercel.com/blog/turbopack
+  - https://swc.rs/
+  - https://esbuild.github.io/
+  - https://vitejs.dev/
 
 # Debugging im Browser
 
