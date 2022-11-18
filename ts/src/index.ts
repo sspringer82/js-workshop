@@ -1,5 +1,6 @@
 import User from './User';
 import './Collection';
+import './stuff';
 
 const userName = 'Klaus';
 console.log('Hallo ' + userName);
