@@ -1,7 +1,10 @@
 export default class Person {
   id = 0;
+
   firstName = '';
+
   lastName = '';
+
   age = 0;
 
   constructor(id, firstName, lastName, age) {

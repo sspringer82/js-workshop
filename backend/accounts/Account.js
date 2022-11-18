@@ -2,6 +2,7 @@ import Person from './Person.js';
 
 export default class Account extends Person {
   userName = '';
+
   #password = '';
 
   constructor(id, firstName, lastName, age) {
@@ -23,9 +24,10 @@ export default class Account extends Person {
     // }
     // return this.#password;
 
-    return (this.#password = new Array(length)
+    this.#password = new Array(length)
       .fill('')
-      .map((v) => String.fromCharCode(65 + Math.random() * 25))
-      .join(''));
+      .map(() => String.fromCharCode(65 + Math.random() * 25))
+      .join('');
+    return this.#password;
   }
 }

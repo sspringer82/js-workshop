@@ -43,6 +43,7 @@
   - https://swc.rs/
   - https://esbuild.github.io/
   - https://vitejs.dev/
+- https://github.com/sindresorhus/eslint-plugin-unicorn
 
 # Debugging im Browser
 
@@ -77,3 +78,7 @@
 2. in das Verzeichnis mit der package.json wechseln
 3. `npm install`, um alle Abhängigkeiten zu installieren
 4. `npm start`, zum starten, `npm test`, um die Tests auszuführen
+
+# ESLint
+
+`npm init @eslint/config`

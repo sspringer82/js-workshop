@@ -8,4 +8,5 @@ app.use(express.static('public'));
 
 app.use('/accounts', accountRouter);
 
+// eslint-disable-next-line no-console
 app.listen(8080, () => console.log('listening'));

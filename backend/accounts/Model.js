@@ -1,18 +1,21 @@
-import Account from './Account.js';
 import { faker } from '@faker-js/faker';
+import Account from './Account.js';
 
 export default class Model {
   #accounts = [];
 
   fillAccounts() {
-    this.#accounts = new Array(100).fill('').map((account, index) => {
-      return new Account(
-        index,
-        faker.name.firstName(),
-        faker.name.lastName(),
-        Math.floor(Math.random() * 50) + 10
+    this.#accounts = new Array(100)
+      .fill('')
+      .map(
+        (account, index) =>
+          new Account(
+            index,
+            faker.name.firstName(),
+            faker.name.lastName(),
+            Math.floor(Math.random() * 50) + 10
+          )
       );
-    });
   }
 
   getAccounts() {
@@ -22,7 +25,7 @@ export default class Model {
   createAccount(account) {
     let nextId = 1;
     if (this.#accounts.length > 0) {
-      nextId = Math.max(...this.#accounts.map((account) => account.id)) + 1;
+      nextId = Math.max(...this.#accounts.map((a) => a.id)) + 1;
     }
 
     const newAccount = new Account(
