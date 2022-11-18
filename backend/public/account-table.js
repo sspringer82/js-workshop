@@ -53,7 +53,7 @@ export default function createTable(target, data) {
   const table = createElement('table');
   table.addEventListener('click', (event) => {
     const data = event.target.dataset;
-    if (data.deleteId) {
+    if (data.deleteId && confirm('sicher?')) {
       deleteAccount(data.deleteId);
     }
   });
