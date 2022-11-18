@@ -38,8 +38,13 @@ export default class Model {
 
   updateAccount(account, id) {
     const index = this.#accounts.findIndex((a) => a.id === id);
-    this.#accounts[index] = account;
-    return account;
+    this.#accounts[index] = new Account(
+      id,
+      account.firstName,
+      account.lastName,
+      account.age
+    );
+    return this.#accounts[index];
   }
 
   removeAccount(id) {

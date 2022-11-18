@@ -18,6 +18,7 @@ describe('Model', () => {
   });
 
   it('should add a new account to an existing array', () => {
+    debugger;
     const model = new Model();
     model.fillAccounts(); // + 100 Accounts
 
